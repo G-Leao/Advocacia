@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Escritório de advocacia premium — Defendendo seus direitos com ética, estratégia e compromisso."
+    />
+
+    <title>Advocacia | Premium &amp; Responsivo</title>
+
+    <!-- SEO básico -->
+    <meta name="theme-color" content="#071a3a" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Fonte (fallback automático caso não carregue) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (brands) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+    <!-- Navbar -->
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Ir para o início">
+          <span class="brand-mark" aria-hidden="true">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2c3.9 2.5 7 4.1 9 4.7V12c0 5.2-3.4 9.3-9 10-5.6-.7-9-4.8-9-10V6.7C5 6.1 8.1 4.5 12 2Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+              <path
+                d="M8.2 12.2 11 15l5.3-6"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Dr. Rafael Almeida</span>
+            <span class="brand-sub">Advocacia</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menuMobile"
+          >
+            <span class="nav-toggle-icon" aria-hidden="true"></span>
+          </button>
+
+          <ul class="nav-list" id="menuMobile">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#areas">Áreas</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contato" class="cta-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <!-- HERO -->
+      <section class="hero" aria-label="Apresentação">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="paper-noise"></div>
+          <div class="hero-lines"></div>
+        </div>
+
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <div class="hero-badge" data-reveal>
+              <span class="dot" aria-hidden="true"></span>
+              <span>Atuação estratégica • Atendimento humanizado</span>
+            </div>
+
+            <h1 class="hero-title" data-reveal>
+              Defendendo seus direitos com ética,
+              <span class="gold">estratégia</span> e compromisso.
+            </h1>
+
+            <p class="hero-text" data-reveal>
+              Escritório de advocacia com foco em soluções jurídicas claras,
+              acompanhamento contínuo e comunicação transparente. Do primeiro
+              contato ao desfecho do processo.
+            </p>
+
+            <div class="hero-actions" data-reveal>
+              <a class="btn btn-primary" href="#contato">Entrar em contato</a>
+              <a class="btn btn-ghost" href="#contato" data-scroll-soft
+                >Agendar consulta</a
+              >
+            </div>
+
+            <div class="hero-meta" data-reveal>
+              <div class="meta-item">
+                <span class="meta-icon" aria-hidden="true"
+                  ><i class="fa-solid fa-scale-balanced"></i
+                ></span>
+                <span class="meta-label">Atendimento com hora marcada</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon" aria-hidden="true"
+                  ><i class="fa-solid fa-clock"></i
+                ></span>
+                <span class="meta-label">Retorno rápido</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" data-reveal>
+            <div class="profile-card" aria-label="Foto profissional">
+              <div class="profile-media">
+                <div
+                  class="profile-photo"
+                  role="img"
+                  aria-label="Foto ilustrativa"
+                ></div>
+              </div>
+              <div class="profile-details">
+                <div class="profile-name">Dr. Rafael Almeida</div>
+                <div class="profile-role">Advogado • OAB/UF 00.000</div>
+                <div class="profile-divider" aria-hidden="true"></div>
+                <div class="profile-foot">
+                  <span class="pill"
+                    ><span class="pill-dot" aria-hidden="true"></span>
+                    Consultoria &amp; contencioso</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-stats" aria-hidden="true">
+              <div class="float-card">
+                <div class="float-top">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                </div>
+
+                <div class="float-text">Pareceres &amp; orientações</div>
+              </div>
+              <div class="float-card float-card-2">
+                <div class="float-top">
+                  <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                </div>
+
+                <div class="float-text">Planejamento processual</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section class="section" id="sobre">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2 class="section-title">Sobre o advogado</h2>
+            <p class="section-sub">
+              Uma atuação pautada por ética, experiência e atenção a cada
+              detalhe.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card soft" data-reveal>
+              <h3 class="card-title">Experiência que traz clareza</h3>
+              <p class="card-text">
+                Com <strong>10 anos de experiência</strong> (fictícios) e
+                constante atualização, o Dr. Rafael Almeida oferece atendimento
+                personalizado para ajudar você a tomar decisões com segurança.
+              </p>
+              <ul class="checklist">
+                <li>
+                  <span aria-hidden="true">✓</span><b>Atuação ética</b> em todas
+                  as etapas.
+                </li>
+                <li>
+                  <span aria-hidden="true">✓</span><b>Compromisso</b> com prazos
+                  e expectativas realistas.
+                </li>
+                <li>
+                  <span aria-hidden="true">✓</span
+                  ><b>Foco em soluções</b> jurídicas eficientes.
+                </li>
+                <li>
+                  <span aria-hidden="true">✓</span
+                  ><b>Atualização constante</b> para reduzir riscos.
+                </li>
+              </ul>
+            </div>
+
+            <div class="card premium" data-reveal>
+              <div class="premium-top">
+                <div class="icon-badge" aria-hidden="true">
+                  <i class="fa-solid fa-balance-scale" aria-hidden="true"></i>
+                </div>
+                <h3 class="card-title">Visão institucional</h3>
+              </div>
+
+              <p class="card-text">
+                Cada caso é conduzido com análise técnica, estratégia e
+                comunicação clara. O objetivo é proteger seus interesses com
+                rigor jurídico e sensibilidade às necessidades do cliente.
+              </p>
+              <div class="quote">
+                <p>
+                  “O melhor resultado nasce da combinação entre técnica,
+                  planejamento e confiança.”
+                </p>
+                <span class="quote-author">— Dr. Rafael Almeida</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AREAS -->
+      <section class="section" id="areas">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2 class="section-title">Áreas de atuação</h2>
+            <p class="section-sub">
+              Atendimento completo com foco em estratégia e resolução.
+            </p>
+          </div>
+
+          <div class="grid-3 areas-with-media">
+            <article class="area-card" data-reveal>
+              <div class="area-media" aria-hidden="true"></div>
+              <div class="area-icon" aria-hidden="true">
+                <i class="fa-solid fa-landmark"></i>
+              </div>
+              <h3>Direito Civil</h3>
+
+              <p>
+                Contratos, responsabilidade civil e soluções para conflitos.
+              </p>
+            </article>
+
+            <article class="area-card" data-reveal>
+              <div class="area-media" aria-hidden="true"></div>
+              <div class="area-icon" aria-hidden="true">
+                <i class="fa-solid fa-building"></i>
+              </div>
+
+              <h3>Direito Empresarial</h3>
+
+              <p>
+                Estruturação, revisão contratual e consultoria para negócios.
+              </p>
+            </article>
+            <article class="area-card" data-reveal>
+              <div class="area-media" aria-hidden="true"></div>
+              <div class="area-icon" aria-hidden="true">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+
+              <h3>Direito Trabalhista</h3>
+
+              <p>Atuação estratégica para empresas e trabalhadores.</p>
+            </article>
+            <article class="area-card" data-reveal>
+              <div class="area-media" aria-hidden="true"></div>
+              <div class="area-icon" aria-hidden="true">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+
+              <h3>Direito Previdenciário</h3>
+
+              <p>Benefícios, revisões e orientações com acompanhamento.</p>
+            </article>
+            <article class="area-card" data-reveal>
+              <div class="area-media" aria-hidden="true"></div>
+              <div class="area-icon" aria-hidden="true">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+
+              <h3>Direito do Consumidor</h3>
+
+              <p>Defesa dos direitos e busca por soluções efetivas.</p>
+            </article>
+            <article class="area-card" data-reveal>
+              <div class="area-media" aria-hidden="true"></div>
+              <div class="area-icon" aria-hidden="true">
+                <i class="fa-solid fa-thumbtack"></i>
+              </div>
+
+              <h3>Consultoria Jurídica</h3>
+
+              <p>Diagnóstico, prevenção de riscos e pareceres objetivos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMO FUNCIONA -->
+      <section class="section" id="como-funciona">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2 class="section-title">Como funciona o atendimento</h2>
+            <p class="section-sub">
+              Um processo claro, ético e orientado para resultados.
+            </p>
+          </div>
+
+          <div class="timeline" aria-label="Etapas do atendimento">
+            <div class="timeline-line" aria-hidden="true"></div>
+
+            <div class="step" data-reveal>
+              <div class="step-num">01</div>
+              <div class="step-body">
+                <h3>Primeiro contato</h3>
+                <p>
+                  Você descreve o contexto e recebe orientação inicial objetiva.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-reveal>
+              <div class="step-num">02</div>
+              <div class="step-body">
+                <h3>Análise do caso</h3>
+                <p>
+                  Examinamos documentos, avaliamos riscos e definimos próximos
+                  passos.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-reveal>
+              <div class="step-num">03</div>
+              <div class="step-body">
+                <h3>Estratégia jurídica</h3>
+                <p>
+                  Montamos um plano de ação com comunicação transparente e
+                  prazos.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-reveal>
+              <div class="step-num">04</div>
+              <div class="step-body">
+                <h3>Acompanhamento</h3>
+                <p>
+                  Você é atualizado ao longo do processo, com foco em decisões
+                  seguras.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIFERENCIAIS -->
+      <section class="section" id="diferenciais">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2 class="section-title">Diferenciais</h2>
+            <p class="section-sub">
+              O atendimento premium que você procura — com rigor e humanidade.
+            </p>
+          </div>
+
+          <div class="grid-3 dif">
+            <div class="diff-item" data-reveal>
+              <div class="diff-icon" aria-hidden="true">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <h3>Atendimento humanizado</h3>
+
+              <p>Escuta ativa e orientação clara em cada etapa.</p>
+            </div>
+            <div class="diff-item" data-reveal>
+              <div class="diff-icon" aria-hidden="true">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <h3>Ética profissional</h3>
+
+              <p>Conduta íntegra com transparência e responsabilidade.</p>
+            </div>
+            <div class="diff-item" data-reveal>
+              <div class="diff-icon" aria-hidden="true">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <h3>Transparência</h3>
+
+              <p>Clareza sobre caminhos, custos e expectativas.</p>
+            </div>
+            <div class="diff-item" data-reveal>
+              <div class="diff-icon" aria-hidden="true">
+                <i class="fa-solid fa-comment-dots"></i>
+              </div>
+
+              <h3>Comunicação clara</h3>
+              <p>Atualizações frequentes, linguagem objetiva e suporte.</p>
+            </div>
+            <div class="diff-item" data-reveal>
+              <div class="diff-icon" aria-hidden="true">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+
+              <h3>Soluções estratégicas</h3>
+              <p>
+                Planejamento jurídico para reduzir riscos e aumentar eficácia.
+              </p>
+            </div>
+            <div class="diff-item" data-reveal>
+              <div class="diff-icon" aria-hidden="true">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+
+              <h3>Acompanhamento durante todo o processo</h3>
+              <p>Presença contínua e orientação do início ao desfecho.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NÚMEROS -->
+      <section class="section numbers" id="numeros">
+        <div class="container">
+          <div class="numbers-wrap">
+            <div class="section-head small" data-reveal>
+              <h2 class="section-title">Números</h2>
+              <p class="section-sub">
+                Ilustrativos — demonstram foco em resultado e dedicação.
+              </p>
+            </div>
+
+            <div class="numbers-grid">
+              <div class="num-card" data-reveal>
+                <div class="num-value" data-count="10">0</div>
+                <div class="num-label">+ anos de experiência</div>
+              </div>
+              <div class="num-card" data-reveal>
+                <div class="num-value" data-count="500">0</div>
+                <div class="num-label">+ atendimentos</div>
+              </div>
+              <div class="num-card" data-reveal>
+                <div class="num-value" data-count="95" data-suffix="%">0</div>
+                <div class="num-label">satisfação</div>
+              </div>
+              <div class="num-card" data-reveal>
+                <div class="num-value" data-count="100" data-suffix="%">0</div>
+                <div class="num-label">dedicação</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPOIMENTOS -->
+      <section class="section" id="depoimentos">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2 class="section-title">Depoimentos</h2>
+            <p class="section-sub">
+              Histórias fictícias que refletem confiança e clareza.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <article class="test-card" data-reveal>
+              <div class="test-stars" aria-hidden="true">★★★★★</div>
+              <p class="test-text">
+                “Com uma comunicação impecável, conseguimos decisões
+                estratégicas sem surpresas. Recomendo.”
+              </p>
+              <div class="test-person">
+                <div class="avatar" aria-hidden="true">RA</div>
+                <div>
+                  <div class="test-name">Mariana Souza</div>
+                  <div class="test-role">Autônoma • Consumidor</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="test-card" data-reveal>
+              <div class="test-stars" aria-hidden="true">★★★★★</div>
+              <p class="test-text">
+                “O atendimento foi extremamente humano e tecnicamente sólido.
+                Foi tudo muito bem conduzido.”
+              </p>
+              <div class="test-person">
+                <div class="avatar" aria-hidden="true">JP</div>
+                <div>
+                  <div class="test-name">João Pereira</div>
+                  <div class="test-role">Empresário • Trabalhista</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="test-card" data-reveal>
+              <div class="test-stars" aria-hidden="true">★★★★★</div>
+              <p class="test-text">
+                “Recebi orientações claras e objetivas. O acompanhamento durante
+                todo o processo fez diferença.”
+              </p>
+              <div class="test-person">
+                <div class="avatar" aria-hidden="true">CL</div>
+                <div>
+                  <div class="test-name">Carla Lima</div>
+                  <div class="test-role">Servidora • Previdenciário</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <p class="section-sub">
+              Respostas diretas para facilitar sua decisão.
+            </p>
+          </div>
+
+          <div class="faq" data-reveal>
+            <div class="faq-item">
+              <button class="faq-q" type="button" aria-expanded="false">
+                Como funciona a primeira consulta?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" role="region" aria-hidden="true">
+                <p>
+                  Na primeira consulta, você descreve o caso e apresenta
+                  documentos disponíveis. Em seguida, fazemos uma triagem
+                  técnica e indicamos o melhor caminho, com prazos e próximos
+                  passos.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" type="button" aria-expanded="false">
+                Quais documentos devo levar?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" role="region" aria-hidden="true">
+                <p>
+                  Em geral, documentos pessoais, comprovantes relacionados ao
+                  caso e quaisquer contratos, decisões ou notificações que você
+                  possua. Caso prefira, você pode enviar fotos/arquivos antes
+                  para agilizar a análise.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" type="button" aria-expanded="false">
+                Como solicitar atendimento?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" role="region" aria-hidden="true">
+                <p>
+                  Utilize o formulário ao lado ou entre em contato diretamente.
+                  Você receberá um retorno com opções de horário e orientação
+                  inicial.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" type="button" aria-expanded="false">
+                O atendimento pode ser online?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" role="region" aria-hidden="true">
+                <p>
+                  Sim. Dependendo da demanda, é possível realizar atendimento
+                  online com envio prévio de documentos e acompanhamento do
+                  andamento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section class="section contact" id="contato">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2 class="section-title">Vamos conversar sobre o seu caso?</h2>
+
+            <p class="section-sub">
+              Cada situação exige uma análise cuidadosa. Entre em contato para
+              receber um atendimento personalizado, com ética, transparência e
+              total sigilo.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- CTA -->
+            <div class="card contact-form" data-reveal>
+              <div class="contact-highlight">
+                <div class="contact-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <h3>Atendimento rápido pelo WhatsApp</h3>
+
+                <p>
+                  Tire suas dúvidas, apresente seu caso e receba uma orientação
+                  inicial. O atendimento é realizado com discrição e
+                  compromisso.
+                </p>
+
+                <a class="btn btn-whatsapp" href="#" id="btnWhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  Falar agora pelo WhatsApp
+                </a>
+              </div>
+
+              <div class="contact-benefits">
+                <div class="benefit">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <span>Sigilo profissional garantido</span>
+                </div>
+
+                <div class="benefit">
+                  <i class="fa-solid fa-clock"></i>
+                  <span>Resposta rápida em horário comercial</span>
+                </div>
+
+                <div class="benefit">
+                  <i class="fa-solid fa-laptop"></i>
+                  <span>Atendimento online e presencial</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Informações -->
+            <aside class="contact-side" data-reveal>
+              <div class="side-card">
+                <h3 class="side-title">Informações de Contato</h3>
+
+                <div class="side-item">
+                  <div class="side-k">
+                    <i class="fa-solid fa-phone"></i>
+                    Telefone
+                  </div>
+
+                  <div class="side-v">(11) 3333-2222</div>
+                </div>
+
+                <div class="side-item">
+                  <div class="side-k">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                  </div>
+
+                  <div class="side-v">(11) 98888-7766</div>
+                </div>
+
+                <div class="side-item">
+                  <div class="side-k">
+                    <i class="fa-solid fa-envelope"></i>
+                    E-mail
+                  </div>
+
+                  <div class="side-v">contato@advrafael.com.br</div>
+                </div>
+
+                <div class="side-item">
+                  <div class="side-k">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Endereço
+                  </div>
+
+                  <div class="side-v">Av. das Nações, 123 • São Paulo/SP</div>
+                </div>
+
+                <div class="side-item">
+                  <div class="side-k">
+                    <i class="fa-solid fa-business-time"></i>
+                    Horário
+                  </div>
+
+                  <div class="side-v">Segunda a Sexta • 09:00 às 18:00</div>
+                </div>
+
+                <div class="side-divider"></div>
+
+                <div class="contact-tags">
+                  <div class="tag">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    Ética
+                  </div>
+
+                  <div class="tag">
+                    <i class="fa-solid fa-user-shield"></i>
+                    Confiança
+                  </div>
+
+                  <div class="tag">
+                    <i class="fa-solid fa-handshake"></i>
+                    Transparência
+                  </div>
+                </div>
+              </div>
+
+              <!-- Google Maps -->
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps?q=São%20Paulo&output=embed"
+                  loading="lazy"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Rodapé">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <div>
+              <h3>Dr. Rafael Almeida</h3>
+
+              <p>
+                Advocacia especializada com atuação pautada pela ética,
+                transparência e compromisso na defesa dos interesses de seus
+                clientes.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-links-column">
+            <h4>Navegação</h4>
+
+            <a href="#sobre">Sobre</a>
+            <a href="#areas">Áreas de atuação</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#faq">Perguntas frequentes</a>
+            <a href="#contato">Contato</a>
+          </div>
+
+          <div class="footer-links-column">
+            <h4>Contato</h4>
+
+            <div class="footer-info">
+              <i class="fa-solid fa-phone"></i>
+              <span>(11) 3333-2222</span>
+            </div>
+
+            <div class="footer-info">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>(11) 98888-7766</span>
+            </div>
+
+            <div class="footer-info">
+              <i class="fa-solid fa-envelope"></i>
+              <span>contato@advrafael.com.br</span>
+            </div>
+
+            <div class="footer-info">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>São Paulo • SP</span>
+            </div>
+          </div>
+
+          <div class="footer-links-column">
+            <h4>Redes Sociais</h4>
+
+            <div class="socials">
+              <a class="social" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a class="social" href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <a class="social" href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <span>
+            © <span id="year"></span> Dr. Rafael Almeida • OAB/UF 00.000
+          </span>
+
+          <div class="footer-bottom-links">
+            <a href="#">Política de Privacidade</a>
+
+            <a href="#">Termos de Uso</a>
+
+            <a href="#topo" class="to-top">
+              <i class="fa-solid fa-arrow-up"></i>
+              Voltar ao topo
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script.js" defer></script>
+  </body>
+</html>
