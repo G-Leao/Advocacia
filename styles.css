@@ -665,6 +665,12 @@ main {
     grid-template-columns: 1fr;
   }
   .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-3 {
     grid-template-columns: 1fr;
   }
 }
@@ -1828,6 +1834,12 @@ main {
 
 @media (max-width: 980px) {
   .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .areas-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -2113,6 +2125,8 @@ main {
 /* Espaço para foto do advogado */
 .team-photo {
   width: 100%;
+  aspect-ratio: 3 / 3.4;
+  max-height: 420px;
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: #050b18;
@@ -2122,7 +2136,7 @@ main {
 
 .team-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   display: block;
 }
@@ -2132,7 +2146,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 260px;
+  aspect-ratio: 3 / 3.4;
   border: 1px dashed rgba(255, 255, 255, 0.22);
   background:
     radial-gradient(
@@ -2180,4 +2194,152 @@ main {
 
 .team-card .card-text {
   margin: 0;
+}
+
+/* ===========================
+   RESPONSIVIDADE AVANÇADA
+=========================== */
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 46px 0 36px;
+  }
+
+  .hero-meta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .meta-item {
+    justify-content: flex-start;
+  }
+
+  .floating-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 26px 22px;
+  }
+
+  .contact-highlight h3 {
+    font-size: 26px;
+  }
+
+  .side-card {
+    padding: 24px 20px;
+  }
+
+  .side-item {
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 0;
+  }
+
+  .side-v {
+    text-align: left;
+  }
+
+  .cta-box {
+    padding: 30px 20px;
+  }
+
+  .footer {
+    padding: 48px 0 24px;
+  }
+
+  .footer-top {
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section {
+    padding: 54px 0;
+  }
+
+  .step {
+    flex-direction: column;
+  }
+
+  .page-hero {
+    padding: 42px 0 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 13px;
+  }
+
+  .brand-sub {
+    font-size: 11px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-actions,
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn,
+  .cta-actions .btn {
+    width: 100%;
+  }
+
+  .firm-card-head {
+    flex-wrap: wrap;
+  }
+
+  .lawyer-row {
+    flex-wrap: wrap;
+  }
+
+  .team-photo {
+    max-height: 340px;
+  }
+
+  .contact-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 30px;
+  }
+
+  .map {
+    height: 260px;
+  }
+
+  .social {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+}
+
+/* Garante que imagens nunca estourem o layout */
+img {
+  max-width: 100%;
+}
+
+/* Tablets em modo retrato: time empilhado com fotos não muito altas */
+@media (max-width: 860px) {
+  .team-photo {
+    max-height: 380px;
+  }
 }
