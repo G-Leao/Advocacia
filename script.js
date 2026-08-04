@@ -138,13 +138,8 @@
     });
   }
 
-  // WhatsApp link (fictício)
-  const btnWhats = document.getElementById("btnWhatsApp");
-  const phone = "5511988887766"; // fictício
-  if (btnWhats) {
-    const msg = encodeURIComponent("Olá! Gostaria de agendar uma consulta.");
-    btnWhats.setAttribute("href", `https://wa.me/${phone}?text=${msg}`);
-  }
+  // WhatsApp link (número pendente — será adicionado quando o cliente enviar)
+  // O botão de contato atual utiliza e-mail até o número ser informado.
 
   // Voltar ao topo
   const toTopEl = document.querySelector('.to-top[href="#topo"], .to-top');
