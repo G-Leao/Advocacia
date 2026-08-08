@@ -158,14 +158,13 @@
 
     // Click com scroll suave e foco acessível
     toTopEl.addEventListener("click", (e) => {
-      // Evita o comportamento padrão do <a href="#topo"> para controlar o offset/foco
+      // Evita o comportamento padrão do <a href="#topo"> para controlar o offset/foco.
+      // NOTA: o #topo é o <header> com position:fixed, então scrollIntoView nele
+      // não rola a página — usamos window.scrollTo para garantir o scroll ao topo.
       e.preventDefault();
-      const topo = document.getElementById("topo");
-      (topo || document.body).scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
       // Move o foco para o topo para leitores de tela
+      const topo = document.getElementById("topo");
       if (topo) {
         topo.setAttribute("tabindex", "-1");
         topo.focus({ preventScroll: true });
