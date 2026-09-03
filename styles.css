@@ -2100,4 +2100,83 @@ img {
   .team-photo {
     max-height: 380px;
   }
+
+/* ============================
+   WhatsApp Float Button
+============================ */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px 12px 14px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+  transition:
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease),
+    background 0.25s var(--ease);
+}
+
+.whatsapp-float:hover {
+  background: #1ebe57;
+  box-shadow: 0 6px 22px rgba(37, 211, 102, 0.45);
+  transform: translateY(-2px);
+}
+
+.whatsapp-float:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-float__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  flex: 0 0 auto;
+}
+
+.whatsapp-float__label {
+  white-space: nowrap;
+}
+
+/* Mobile: apenas o ícone */
+@media (max-width: 600px) {
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    padding: 14px;
+  }
+
+  .whatsapp-float__label {
+    display: none;
+  }
+
+  .whatsapp-float__icon {
+    width: auto;
+    height: auto;
+    font-size: 26px;
+  }
+}
+
+/* Ajuste para não sobrepor o botão "voltar ao topo" em telas pequenas */
+@media (max-width: 480px) {
+  .whatsapp-float {
+    bottom: 14px;
+    right: 14px;
+  }
 }
