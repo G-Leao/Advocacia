@@ -2592,7 +2592,7 @@ svg {
 }
 
 .social:hover i {
-  color: var(--accent);
+  color: var(--surface-secondary);
   transform: translateY(-2px) scale(1.1);
 }
 
