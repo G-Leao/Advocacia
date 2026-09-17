@@ -10,6 +10,8 @@
 
     <title>Sobre | Bilobran & Palaci Advogados</title>
 
+    <link rel="icon" type="image/png" href="./assets/logoSemfundo.png" />
+
     <meta name="theme-color" content="#071a3a" />
 
     <link rel="stylesheet" href="./styles.css" />
@@ -25,6 +27,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -34,26 +43,9 @@
       <div class="container header-inner">
         <a class="brand" href="/" aria-label="Ir para o início">
           <span class="brand-mark" aria-hidden="true">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 2c3.9 2.5 7 4.1 9 4.7V12c0 5.2-3.4 9.3-9 10-5.6-.7-9-4.8-9-10V6.7C5 6.1 8.1 4.5 12 2Z"
-                stroke="currentColor"
-                stroke-width="1.6"
-              />
-              <path
-                d="M8.2 12.2 11 15l5.3-6"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="logo">
+              <img src="./assets/logoComfundo.png" alt="Bilobran&Palaci" />
+            </div>
           </span>
           <span class="brand-text">
             <span class="brand-name">Bilobran & Palaci</span>
@@ -62,13 +54,31 @@
         </a>
 
         <div class="header-socials" aria-label="Redes sociais">
-          <a class="header-social" href="https://instagram.com/bilobranpalaciadvs" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a
+            class="header-social"
+            href="https://instagram.com/bilobranpalaciadvs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <a class="header-social" href="https://www.facebook.com/bilobranpalaciadvs" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a
+            class="header-social"
+            href="https://www.facebook.com/bilobranpalaciadvs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
             <i class="fa-brands fa-facebook-f"></i>
           </a>
-          <a class="header-social" href="https://www.linkedin.com/company/bilobranpalaciadvogados" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a
+            class="header-social"
+            href="https://www.linkedin.com/company/bilobranpalaciadvogados"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
@@ -88,10 +98,11 @@
             <li><a href="/">Início</a></li>
             <li><a href="/sobre" class="active">Sobre</a></li>
             <li><a href="/areas">Áreas de Atuação</a></li>
-            <li><a href="/como-funciona">Como Funciona</a></li>
+
             <li><a href="/publicacoes">Publicações</a></li>
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/contato" class="cta-link">Contato</a></li>
+            <li><a href="/como-funciona">Como Funciona</a></li>
           </ul>
         </nav>
       </div>
@@ -139,9 +150,9 @@
               <p class="card-text">
                 O Bilobran & Palaci Advogados é um escritório
                 <strong>Full Service</strong>, oferecendo atendimento jurídico
-                completo nas mais diversas áreas do Direito. Fundado há cerca de
-                <strong>1 ano</strong>, o escritório reúne sócios com
-                <strong>6 anos de experiência</strong> no mercado jurídico.
+                completo nas mais diversas áreas do Direito.<br />
+                Fundado em <strong>2026</strong>, o escritório reúne sócios com
+                <strong>Muitos anos de experiência</strong> no mercado jurídico.
               </p>
 
               <p class="card-text">
@@ -165,12 +176,7 @@
 
               <ul class="checklist">
                 <li>
-                  <span aria-hidden="true">✓</span
-                  ><b>Atuação Full Service</b> em diversas áreas do Direito
-                </li>
-                <li>
-                  <span aria-hidden="true">✓</span><b>Experiência jurídica</b> —
-                  6 anos de mercado dos sócios
+                  <span aria-hidden="true">✓</span>Diversas áreas do Direito
                 </li>
                 <li>
                   <span aria-hidden="true">✓</span
@@ -194,10 +200,6 @@
                 <div class="about-stat">
                   <div class="about-stat-value">12</div>
                   <div class="about-stat-label">áreas do Direito</div>
-                </div>
-                <div class="about-stat">
-                  <div class="about-stat-value">100%</div>
-                  <div class="about-stat-label">Full Service</div>
                 </div>
               </div>
             </div>
@@ -392,12 +394,8 @@
               ética, transparência e total sigilo.
             </p>
             <div class="cta-actions">
-              <a class="btn btn-primary" href="/contato"
-                >Entrar em contato</a
-              >
-              <a class="btn btn-ghost" href="/areas"
-                >Ver áreas de atuação</a
-              >
+              <a class="btn btn-primary" href="/contato">Entrar em contato</a>
+              <a class="btn btn-ghost" href="/areas">Ver áreas de atuação</a>
             </div>
           </div>
         </div>
@@ -435,11 +433,12 @@
           <div class="footer-links-column">
             <h4>Áreas de Atuação</h4>
 
+            <a href="/areas">Direito Criminal</a>
             <a href="/areas">Direito Cível</a>
+            <a href="/areas">Direito da Família</a>
+            <a href="/areas">Direito Ambiental</a>
             <a href="/areas">Direito Bancário</a>
             <a href="/areas">Direito Trabalhista</a>
-            <a href="/areas">Direito Desportivo</a>
-            <a href="/areas">Direito do Consumidor</a>
           </div>
 
           <div class="footer-links-column">
@@ -461,23 +460,53 @@
             </div>
 
             <div class="socials">
-              <a class="social" href="https://instagram.com/bilobranpalaciadvs" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a
+                class="social"
+                href="https://instagram.com/bilobranpalaciadvs"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
                 <i class="fa-brands fa-instagram"></i>
               </a>
 
-              <a class="social" href="https://www.facebook.com/bilobranpalaciadvs" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <a
+                class="social"
+                href="https://www.facebook.com/bilobranpalaciadvs"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
 
-              <a class="social" href="https://www.linkedin.com/company/bilobranpalaciadvogados" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a
+                class="social"
+                href="https://www.linkedin.com/company/bilobranpalaciadvogados"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
 
-              <a class="social" href="https://bilobranpalaci.jusbrasil.com.br" target="_blank" rel="noopener noreferrer" aria-label="Jusbrasil">
+              <a
+                class="social"
+                href="https://bilobranpalaci.jusbrasil.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Jusbrasil"
+              >
                 <i class="fa-solid fa-scale-balanced"></i>
               </a>
 
-              <a class="social" href="https://bilobranpalaciadvogados.com.br" target="_blank" rel="noopener noreferrer" aria-label="Site oficial">
+              <a
+                class="social"
+                href="https://bilobranpalaciadvogados.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Site oficial"
+              >
                 <i class="fa-solid fa-globe"></i>
               </a>
             </div>
