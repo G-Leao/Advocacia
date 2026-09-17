@@ -1,0 +1,60 @@
+{
+  "redirects": [
+    {
+      "source": "/contato.html",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/sobre.html",
+      "destination": "/sobre",
+      "permanent": true
+    },
+    {
+      "source": "/atuacao.html",
+      "destination": "/atuacao",
+      "permanent": true
+    },
+    {
+      "source": "/empresas.html",
+      "destination": "/empresas",
+      "permanent": true
+    },
+    {
+      "source": "/tecnologia.html",
+      "destination": "/tecnologia",
+      "permanent": true
+    },
+    {
+      "source": "/noticias.html",
+      "destination": "/noticias",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/contato",
+      "destination": "/contato.html"
+    },
+    {
+      "source": "/sobre",
+      "destination": "/sobre.html"
+    },
+    {
+      "source": "/atuacao",
+      "destination": "/atuacao.html"
+    },
+    {
+      "source": "/empresas",
+      "destination": "/empresas.html"
+    },
+    {
+      "source": "/tecnologia",
+      "destination": "/tecnologia.html"
+    },
+    {
+      "source": "/noticias",
+      "destination": "/noticias.html"
+    }
+  ]
+}
