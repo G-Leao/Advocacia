@@ -11,23 +11,23 @@
       "permanent": true
     },
     {
-      "source": "/atuacao.html",
-      "destination": "/atuacao",
+      "source": "/areas.html",
+      "destination": "/areas",
       "permanent": true
     },
     {
-      "source": "/empresas.html",
-      "destination": "/empresas",
+      "source": "/como-funciona.html",
+      "destination": "/como-funciona",
       "permanent": true
     },
     {
-      "source": "/tecnologia.html",
-      "destination": "/tecnologia",
+      "source": "/faq.html",
+      "destination": "/faq",
       "permanent": true
     },
     {
-      "source": "/noticias.html",
-      "destination": "/noticias",
+      "source": "/publicacoes.html",
+      "destination": "/publicacoes",
       "permanent": true
     }
   ],
@@ -41,20 +41,20 @@
       "destination": "/sobre.html"
     },
     {
-      "source": "/atuacao",
-      "destination": "/atuacao.html"
+      "source": "/areas",
+      "destination": "/areas.html"
     },
     {
-      "source": "/empresas",
-      "destination": "/empresas.html"
+      "source": "/como-funciona",
+      "destination": "/como-funciona.html"
     },
     {
-      "source": "/tecnologia",
-      "destination": "/tecnologia.html"
+      "source": "/faq",
+      "destination": "/faq.html"
     },
     {
-      "source": "/noticias",
-      "destination": "/noticias.html"
+      "source": "/publicacoes",
+      "destination": "/publicacoes.html"
     }
   ]
 }
