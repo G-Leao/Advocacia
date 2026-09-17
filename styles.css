@@ -127,8 +127,8 @@ h4 {
   inset-inline: 0;
   top: 0;
   z-index: 50;
-  padding: 12px 0;
-  background: rgba(255, 255, 255, 0.92);
+  padding: 27px 0;
+  background: #09122b;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -140,20 +140,32 @@ h4 {
   gap: 16px;
 }
 
+.logo {
+  width: 42px;
+  height: 42px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 6px 8px;
+  gap: 18px;
+  padding: 3px;
+  background: #09122b;
   border-radius: var(--radius-md);
   color: var(--text-primary);
   transition:
     transform 0.25s var(--ease),
     background 0.25s var(--ease);
-}
-.brand:hover {
-  transform: translateY(-1px);
-  background: var(--surface-secondary);
 }
 
 .brand-mark {
@@ -167,14 +179,15 @@ h4 {
   line-height: 1.05;
 }
 .brand-name {
-  font-family: var(--font-serif);
+  font-family: Cinzel;
   font-weight: 700;
   letter-spacing: 0.2px;
-  color: var(--text-primary);
+  color: #ffffff;
 }
 .brand-sub {
+  font-family: Century-Gothic;
   font-size: 12px;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.62);
 }
 
 .nav {
@@ -185,8 +198,8 @@ h4 {
 .nav-toggle {
   display: none;
   background: transparent;
-  border: 1px solid var(--border);
-  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
   width: 44px;
   height: 44px;
   border-radius: var(--radius-md);
@@ -199,7 +212,7 @@ h4 {
   margin: auto;
   width: 18px;
   height: 2px;
-  background: var(--text-primary);
+  background: #ffffff;
   border-radius: 999px;
 }
 .nav-toggle-icon::before,
@@ -210,7 +223,7 @@ h4 {
   right: 0;
   height: 2px;
   border-radius: 999px;
-  background: var(--text-primary);
+  background: #ffffff;
   transition:
     transform 0.25s var(--ease),
     top 0.25s var(--ease),
@@ -235,7 +248,7 @@ h4 {
 .nav-list a {
   padding: 9px 10px;
   border-radius: var(--radius-md);
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.78);
   transition:
     background 0.25s var(--ease),
     transform 0.25s var(--ease),
@@ -245,20 +258,20 @@ h4 {
   white-space: nowrap;
 }
 .nav-list a:hover {
-  background: var(--surface-secondary);
-  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
   transform: translateY(-1px);
 }
 
 .nav-list .cta-link {
-  background: var(--surface-secondary);
-  border: 1px solid var(--border);
-  color: var(--text-primary);
+  background: transparent;
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
 }
 .nav-list .cta-link:hover {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #09122b;
 }
 
 /* Active nav link */
@@ -427,6 +440,7 @@ main {
   font-style: italic;
   letter-spacing: 2px;
   margin: 0;
+  font-family: Cinzel;
 }
 
 .gold {
@@ -474,12 +488,12 @@ main {
 }
 
 .btn-primary {
-  background: var(--primary);
+  background: #09122b;
   color: #fff;
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  background: var(--primary-hover);
+  background: #162a61;
 }
 
 .btn-ghost {
@@ -1337,7 +1351,7 @@ main {
 /* Footer */
 .footer {
   padding: 70px 0 30px;
-  background: var(--text-primary);
+  background: #09122b;
   color: #e9e9e7;
   border-top: 1px solid var(--text-secondary);
 }
@@ -1841,7 +1855,7 @@ main {
 }
 
 .firm-card-name {
-  font-family: var(--font-serif);
+  font-family: Cinzel;
   font-weight: 700;
   letter-spacing: 0.2px;
   font-size: 17px;
@@ -1852,6 +1866,7 @@ main {
   font-weight: 500;
   font-size: 13px;
   margin-top: 3px;
+  font-family: Questrial;
 }
 
 .firm-lawyers {
@@ -2236,27 +2251,36 @@ img {
 .header-social {
   width: 44px;
   height: 44px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: var(--surface-secondary);
-  border: 1px solid var(--border);
-  color: var(--text-secondary);
-  font-size: 18px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   text-decoration: none;
   transition:
     transform 0.25s var(--ease),
     background 0.25s var(--ease),
-    color 0.25s var(--ease),
     border-color 0.25s var(--ease);
 }
-
+.header-social i {
+  font-size: 16px;
+  color: #9e7a37;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
 .header-social:hover {
   transform: translateY(-2px);
   background: var(--accent);
-  color: #fff;
   border-color: var(--accent);
+}
+.header-social:hover i {
+  color: #09122b;
+  transform: scale(1.08);
+}
+.header-social:focus-visible {
+  box-shadow: 0 0 0 3px var(--accent-border);
 }
 
 .header-social:focus {
@@ -2414,21 +2438,6 @@ svg {
 }
 
 /* Redes sociais do header */
-.header-social {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-social i {
-  font-size: 16px;
-  color: var(--text-muted);
-}
-
-.header-social:hover i {
-  color: var(--accent);
-  transform: translateY(-2px) scale(1.08);
-}
 
 /* Menu mobile */
 .nav-toggle:hover .nav-toggle-icon,
@@ -2562,6 +2571,10 @@ svg {
 }
 
 /* Logo footer */
+.footer-title h3 {
+  font-family: Cinzel;
+}
+
 .footer-logo i {
   font-size: 28px;
 }
