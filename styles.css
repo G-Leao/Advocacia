@@ -26,6 +26,9 @@
   --accent: #8a7654;
   --accent-soft: rgba(138, 118, 84, 0.1);
   --accent-border: rgba(138, 118, 84, 0.28);
+  /* Bronze profundo — mesma família do --accent, reservado para textos pequenos
+     sobre superfícies claras (header/footer), garantindo contraste de leitura. */
+  --accent-strong: #6b5a3e;
 
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   --shadow-hover: 0 4px 18px rgba(0, 0, 0, 0.06);
@@ -128,7 +131,7 @@ h4 {
   top: 0;
   z-index: 50;
   padding: 27px 0;
-  background: #09122b;
+  background: #e3e8ee;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -160,7 +163,6 @@ h4 {
   align-items: center;
   gap: 18px;
   padding: 3px;
-  background: #09122b;
   border-radius: var(--radius-md);
   color: var(--text-primary);
   transition:
@@ -177,17 +179,18 @@ h4 {
   display: flex;
   flex-direction: column;
   line-height: 1.05;
+  color: black;
 }
 .brand-name {
   font-family: Cinzel;
   font-weight: 700;
   letter-spacing: 0.2px;
-  color: #ffffff;
+  color: #171717;
 }
 .brand-sub {
   font-family: Century-Gothic;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.62);
+  color: var(--accent-strong);
 }
 
 .nav {
@@ -198,8 +201,8 @@ h4 {
 .nav-toggle {
   display: none;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #ffffff;
+  border: 1px solid rgba(23, 23, 23, 0.22);
+  color: var(--text-primary);
   width: 44px;
   height: 44px;
   border-radius: var(--radius-md);
@@ -212,7 +215,7 @@ h4 {
   margin: auto;
   width: 18px;
   height: 2px;
-  background: #ffffff;
+  background: var(--text-primary);
   border-radius: 999px;
 }
 .nav-toggle-icon::before,
@@ -223,7 +226,7 @@ h4 {
   right: 0;
   height: 2px;
   border-radius: 999px;
-  background: #ffffff;
+  background: var(--text-primary);
   transition:
     transform 0.25s var(--ease),
     top 0.25s var(--ease),
@@ -248,7 +251,7 @@ h4 {
 .nav-list a {
   padding: 9px 10px;
   border-radius: var(--radius-md);
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--text-secondary);
   transition:
     background 0.25s var(--ease),
     transform 0.25s var(--ease),
@@ -258,25 +261,25 @@ h4 {
   white-space: nowrap;
 }
 .nav-list a:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: #ffffff;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
   transform: translateY(-1px);
 }
 
 .nav-list .cta-link {
   background: transparent;
   border: 1px solid var(--accent-border);
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 .nav-list .cta-link:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #09122b;
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+  color: #ffffff;
 }
 
 /* Active nav link */
 .nav-list a.active {
-  color: var(--accent);
+  color: var(--accent-strong);
   background: var(--accent-soft);
   border: 1px solid var(--accent-border);
 }
@@ -1338,8 +1341,8 @@ main {
 /* Footer */
 .footer {
   padding: 70px 0 30px;
-  background: #09122b;
-  color: #e9e9e7;
+  background: #e3e8ee;
+  color: var(--text-secondary);
   border-top: 1px solid var(--text-secondary);
 }
 
@@ -1363,9 +1366,7 @@ main {
   justify-content: center;
   font-size: 28px;
   border-radius: var(--radius-md);
-  background: rgba(138, 118, 84, 0.16);
-  border: 1px solid rgba(138, 118, 84, 0.4);
-  color: #d9c9a8;
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
@@ -1373,20 +1374,33 @@ main {
   margin: 0 0 15px;
   font-size: 26px;
   font-family: var(--font-serif);
-  color: #fff;
+  color: #141414;
 }
 
 .footer-brand p {
   line-height: 1.8;
-  color: rgba(233, 233, 231, 0.75);
+  color: var(--text-secondary);
   max-width: 420px;
 }
 
 .footer-links-column h4 {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 22px;
+  padding-bottom: 10px;
   font-size: 16px;
   font-family: var(--font-serif);
-  color: #fff;
+  color: var(--text-primary);
+}
+/* Filete bronze sob o título — destaque institucional sem alterar o HTML */
+.footer-links-column h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--accent);
 }
 
 .footer-links-column {
@@ -1396,11 +1410,13 @@ main {
 }
 
 .footer-links-column a {
-  color: rgba(233, 233, 231, 0.75);
-  transition: 0.3s;
+  color: var(--text-secondary);
+  transition:
+    color 0.3s var(--ease),
+    padding-left 0.3s var(--ease);
 }
 .footer-links-column a:hover {
-  color: #d9c9a8;
+  color: var(--accent-strong);
   padding-left: 6px;
 }
 
@@ -1408,10 +1424,10 @@ main {
   display: flex;
   align-items: center;
   gap: 14px;
-  color: rgba(233, 233, 231, 0.75);
+  color: var(--text-secondary);
 }
 .footer-info i {
-  color: #d9c9a8;
+  color: var(--accent);
   width: 20px;
 }
 
@@ -1427,10 +1443,10 @@ main {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(23, 23, 23, 0.04);
+  border: 1px solid rgba(23, 23, 23, 0.14);
   font-size: 17px;
-  color: #e9e9e7;
+  color: var(--text-secondary);
   transition: 0.35s;
 }
 .social:hover {
@@ -1442,7 +1458,7 @@ main {
 .footer-divider {
   margin: 50px 0 25px;
   height: 1px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(23, 23, 23, 0.1);
 }
 
 .footer-bottom {
@@ -1451,7 +1467,7 @@ main {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  color: rgba(233, 233, 231, 0.6);
+  color: var(--text-muted);
 }
 
 .footer-bottom-links {
@@ -1460,6 +1476,13 @@ main {
   align-items: center;
   flex-wrap: wrap;
 }
+/* Hover dos links institucionais (não afeta o botão "Voltar ao topo") */
+.footer-bottom-links a:not(.to-top) {
+  transition: color 0.3s var(--ease);
+}
+.footer-bottom-links a:not(.to-top):hover {
+  color: var(--accent-strong);
+}
 
 .to-top {
   display: inline-flex;
@@ -1467,11 +1490,12 @@ main {
   gap: 8px;
   padding: 10px 16px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(23, 23, 23, 0.05);
+  color: var(--text-secondary);
   transition: 0.3s;
 }
 .to-top:hover {
-  background: var(--accent);
+  background: var(--accent-strong);
   color: #fff;
 }
 
@@ -2238,7 +2262,7 @@ img {
   justify-content: center;
   border-radius: 50%;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(23, 23, 23, 0.16);
   text-decoration: none;
   transition:
     transform 0.25s var(--ease),
@@ -2258,7 +2282,7 @@ img {
   border-color: var(--accent);
 }
 .header-social:hover i {
-  color: #09122b;
+  color: var(--text-primary);
   transform: scale(1.08);
 }
 .header-social:focus-visible {
@@ -2425,7 +2449,7 @@ svg {
 .nav-toggle:hover .nav-toggle-icon,
 .nav-toggle:hover .nav-toggle-icon::before,
 .nav-toggle:hover .nav-toggle-icon::after {
-  background: var(--accent);
+  background: var(--accent-strong);
 }
 
 /* Ícones dos botões */
