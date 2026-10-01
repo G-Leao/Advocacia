@@ -1245,6 +1245,59 @@ main {
   margin-bottom: 32px;
 }
 
+.contact-approach {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.contact-approach h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+.contact-approach p {
+  max-width: 58ch;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+.contact-approach-values {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-left: 2px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+.contact-approach-values > i {
+  flex: 0 0 auto;
+  font-size: 18px;
+}
+.contact-approach-values ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact-approach-values li {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.contact-approach-values li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
 /* Botão */
 .btn-whatsapp {
   width: 100%;
@@ -1255,6 +1308,13 @@ main {
   background: var(--primary);
   color: #fff;
   transition: 0.3s;
+}
+.contact-highlight .btn-whatsapp + .btn-whatsapp {
+  margin-top: 12px;
+  background: #25d366;
+}
+.contact-highlight .btn-whatsapp + .btn-whatsapp:hover {
+  background: #1ebe57;
 }
 .btn-whatsapp:hover {
   transform: translateY(-3px);
