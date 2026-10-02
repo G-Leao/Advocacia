@@ -138,8 +138,32 @@
     });
   }
 
-  // WhatsApp link (número pendente — será adicionado quando o cliente enviar)
-  // O botão de contato atual utiliza e-mail até o número ser informado.
+  // WhatsApp por área de atuação ("Consultar sobre este assunto")
+  // A mensagem é montada dinamicamente a partir da área de cada card (h3) e
+  // codificada com encodeURIComponent(). O href do HTML (/contato) permanece
+  // como fallback caso o JavaScript não seja executado.
+  const whatsappBaseUrl = "https://api.whatsapp.com/send?phone=5542998207089";
+
+  document.querySelectorAll(".area-card-modern").forEach((card) => {
+    const link = card.querySelector(".area-card-link");
+    const title = card.querySelector("h3");
+    if (!link || !title) return;
+
+    const area = title.textContent.replace(/\s+/g, " ").trim();
+    if (!area) return;
+
+    const message = "Olá, gostaria de falar sobre " + area + ".";
+    const url =
+      whatsappBaseUrl + "&text=" + encodeURIComponent(message);
+
+    link.setAttribute("href", url);
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener noreferrer");
+    link.setAttribute(
+      "aria-label",
+      "Consultar sobre este assunto pelo WhatsApp (" + area + ")",
+    );
+  });
 
   // Voltar ao topo
   const toTopEl = document.querySelector('.to-top[href="#topo"], .to-top');
