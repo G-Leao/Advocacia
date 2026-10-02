@@ -855,11 +855,19 @@ main {
 }
 
 .areas-with-media .area-media {
-  height: 74px;
+  height: 144px;
   border-radius: var(--radius-md);
-  border: 1px dashed var(--border);
+  border: 1px solid var(--border);
   background: var(--surface-secondary);
   margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.areas-with-media .area-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .area-card h3 {
