@@ -1789,6 +1789,22 @@ main {
   box-shadow: var(--shadow-hover);
 }
 
+.area-card-modern .area-media {
+  height: 168px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface-secondary);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.area-card-modern .area-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .area-card-top {
   display: flex;
   align-items: center;
