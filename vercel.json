@@ -1,0 +1,61 @@
+{
+  "redirects": [
+    {
+      "source": "/contato.html",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/sobre.html",
+      "destination": "/sobre",
+      "permanent": true
+    },
+    {
+      "source": "/areas.html",
+      "destination": "/areas",
+      "permanent": true
+    },
+    {
+      "source": "/como-funciona.html",
+      "destination": "/como-funciona",
+      "permanent": true
+    },
+    {
+      "source": "/faq.html",
+      "destination": "/como-funciona#faq",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/como-funciona#faq",
+      "permanent": true
+    },
+    {
+      "source": "/publicacoes.html",
+      "destination": "/publicacoes",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/contato",
+      "destination": "/contato.html"
+    },
+    {
+      "source": "/sobre",
+      "destination": "/sobre.html"
+    },
+    {
+      "source": "/areas",
+      "destination": "/areas.html"
+    },
+    {
+      "source": "/como-funciona",
+      "destination": "/como-funciona.html"
+    },
+    {
+      "source": "/publicacoes",
+      "destination": "/publicacoes.html"
+    }
+  ]
+}
