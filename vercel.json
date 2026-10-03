@@ -22,7 +22,12 @@
     },
     {
       "source": "/faq.html",
-      "destination": "/faq",
+      "destination": "/como-funciona#faq",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/como-funciona#faq",
       "permanent": true
     },
     {
@@ -47,10 +52,6 @@
     {
       "source": "/como-funciona",
       "destination": "/como-funciona.html"
-    },
-    {
-      "source": "/faq",
-      "destination": "/faq.html"
     },
     {
       "source": "/publicacoes",

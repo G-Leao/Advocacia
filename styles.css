@@ -23,7 +23,7 @@
   --primary: #09122b;
   --primary-hover: #162a61;
 
-  --accent: #c08827;
+  --accent: #d4a537;
   --accent-soft: rgba(138, 118, 84, 0.1);
   --accent-border: rgba(138, 118, 84, 0.28);
   /* Bronze profundo para textos pequenos sobre superfícies claras. */
@@ -458,7 +458,6 @@ main {
 
 .name {
   color: var(--accent);
-  font-style: italic;
   letter-spacing: 2px;
   margin: 0;
   font-family: Cinzel;
@@ -734,6 +733,9 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+.process-modalities {
+  margin-top: 26px;
 }
 
 @media (max-width: 980px) {
