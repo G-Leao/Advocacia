@@ -735,7 +735,13 @@ main {
   gap: 16px;
 }
 .process-modalities {
-  margin-top: 26px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 920px;
+  margin: 0 auto;
+}
+.process-modalities-head {
+  max-width: 920px;
+  margin: 36px auto 20px;
 }
 
 @media (max-width: 980px) {
@@ -1773,7 +1779,25 @@ main {
 
 /* About page */
 .about-profile {
+  grid-template-columns: minmax(0, 1fr);
   align-items: stretch;
+}
+
+.about-profile .card.premium {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: clamp(24px, 4vw, 44px);
+}
+
+.about-profile .card-text {
+  max-width: 78ch;
+  margin: 0;
+  font-size: 16px;
+}
+
+.about-profile .quote {
+  margin-top: 4px;
 }
 
 .about-stats {
